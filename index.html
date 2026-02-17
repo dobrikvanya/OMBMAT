@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMBMAT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ====== ШАПКА ====== -->
+  <header class="topbar">
+    <img src="logo.jpg" alt="Логотип" class="logo">
+
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="menu" id="menu">
+      <a href="#home" class="menu-link">Home</a>
+      <a href="#about" class="menu-link">About</a>
+      <a href="#praxe" class="menu-link">Services</a>
+      <a href="#contact" class="menu-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home"></section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about" id="about">
+    <h2 class="section-title">O nás</h2>
+    <div class="about-card">
+      <div class="about-image">
+        <img src="about.jpg" alt="OMBMAT">
+      </div>
+      <div class="about-text">
+        <p>Firma OMBMAT s.r.o. byla založena в roce 2023 s cílem poskytovat kvalitní a odborné služby v oblasti svařování, zámečnictví, nástrojářství a dalších navazujících technických a řemeslných činností.</p>
+        <p>Sídlo společnosti se nachází ve městě Louny, odkud zajišťujeme zakázky pro zákazníky z celé České republiky.</p>
+        <p>Naše filozofie stojí na preciznosti, spolehlivosti a dlouhodobé spolupráci s průmyslovými partnery. Díky kombinaci odbornosti, flexibilního přístupu a důrazu na kvalitu provedení jsme připraveni být pevným článkem v dodavatelském řetězci moderní výroby a stavebnictví.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRAXE / SERVICES ====== -->
+  <section class="praxe" id="praxe">
+    <h2 class="section-title">Naše praxe</h2>
+    <div class="praxe-card">
+      <div class="praxe-image">
+        <img src="praxe.jpg" alt="Praxe">
+      </div>
+      <div class="praxe-text">
+        <p>Dlouhodobě spolupracujeme se společností Elna Servis s.r.o. v Počeradech, kde zajišťujeme montáže, svařování, obrábění, demontáže potrubí a ocelových konstrukcí. Mezi naše realizace patří také zakázka pro firmu Jirkovská Izolační s.r.o. – výstavba plynové kotelny v Prunéřově.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Naše služby</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-image">
+          <img src="svarec.jpg" alt="Svářeči">
+        </div>
+        <div class="card-text">
+          <h3>Svářeči</h3>
+          <p>Metody:<br>141 (TIG/WIG)<br>135 (MAG)<br>111 (MMA)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="slesar.jpg" alt="Zámečníci">
+        </div>
+        <div class="card-text">
+          <h3>Zámečníci</h3>
+          <p>Kvalifikovaní zámečníci pro výrobu a montáž</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="potrubar.png" alt="Potrubáři">
+        </div>
+        <div class="card-text">
+          <h3>Potrubáři</h3>
+          <p>Montáž a údržba potrubních systémů</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="cnc.jpg" alt="CNC">
+        </div>
+        <div class="card-text">
+          <h3>Obsluha CNC</h3>
+          <p>Obsluha a seřizování CNC strojů</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="contact">
+    <h2 class="footer-title">Kontaktujte nás</h2>
+    <div class="footer-card">
+      <div class="footer-block">
+        <p>🏢 <strong>Obchodní firma:</strong> OMBMAT s.r.o.</p>
+        <p>🆔 <strong>IČO:</strong> 19441100</p>
+        <p>📅 <strong>Datum vzniku:</strong> 19. června 2023</p>
+        <p>⚖️ <strong>Právní forma:</strong> Společnost s ručením omezeným</p>
+        <p>📞 <strong>Telefon:</strong> <a href="tel:+420774559485">+420 774 559 485</a></p>
+      </div>
+      <div class="footer-block">
+        <p>📍 <strong>Sídlo:</strong> kpt. Nálepky 2221, 440 01 Louny</p>
+        <p>📄 <strong>Spisová značka:</strong> C 50648 vedená u Krajského soudu v Ústí nad Labem</p>
+        <p>✉️ <strong>Email:</strong> <a href="mailto:ombmat@seznam.cz">ombmat@seznam.cz</a></p>
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=kpt.%20N%C3%A1lepky%202221%20Louny&output=embed" loading="lazy"></iframe>
+    </div>
+    <p class="footer-copy">© 2026 OMBMAT s.r.o. Všechna práva vyhrazena.</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const links = document.querySelectorAll('.menu-link');
+
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('menu-active');
+      burger.classList.toggle('burger-active');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+        menu.classList.remove('menu-active');
+        burger.classList.remove('burger-active');
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY + 120;
+      links.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if(section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos){
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
